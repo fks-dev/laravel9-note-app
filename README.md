@@ -15,3 +15,8 @@ docker exec -it laravel9-note-app-web bash
 php artisan make:migration create_memos_table --create=memos
 php artisan make:migration create_tags_table --create=tags
 php artisan migrate
+
+# ログイン機能
+動画の通りだとログイン機能のバージョンが古くて失敗する。
+下記コマンドで自動で互換のものをインストールする。
+composer require laravel/ui
